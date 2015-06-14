@@ -7,9 +7,9 @@ public static class MyResources
     public static ClassAndPathName[] GetPathToArray()
     {
         List<ClassAndPathName> path = new List<ClassAndPathName> ();
-        path.Add (new ClassAndPathName ("Sprite", "Sprites"));
-        path.Add (new ClassAndPathName ("BGM", "Sounds/BGM"));
-        path.Add (new ClassAndPathName ("SE", "Sounds/SE"));
+        path.Add (new ClassAndPathName ("Sprite", MyResourcesPath.SPRITE));
+        path.Add (new ClassAndPathName ("BGM", MyResourcesPath.BGM));
+        path.Add (new ClassAndPathName ("SE", MyResourcesPath.SE));
         return path.ToArray ();
     }
 
@@ -41,4 +41,3 @@ public static class MyResources
         }
     }
 }
-

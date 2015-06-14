@@ -15,7 +15,7 @@ public class NameCreatorSample : MonoBehaviour
     Dictionary<string, Sprite> _sprite = new Dictionary<string, Sprite> ();
     void SpriteLoad()
     {
-        object[] _spriteList = Resources.LoadAll<Sprite> ("Sprites");
+        object[] _spriteList = Resources.LoadAll<Sprite> (MyResourcesPath.SPRITE);
         _sprite = new Dictionary<string, Sprite> ();
         foreach (Sprite sprite in _spriteList) {
             Debug.Log (sprite.name);

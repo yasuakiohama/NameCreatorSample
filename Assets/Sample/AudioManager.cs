@@ -48,8 +48,8 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
         _bgmDic = new Dictionary<string, AudioClip> ();
         _seDic  = new Dictionary<string, AudioClip> ();
 
-        object[] bgmList = Resources.LoadAll ("Sounds/BGM");
-        object[] seList  = Resources.LoadAll ("Sounds/SE");
+        object[] bgmList = Resources.LoadAll (MyResourcesPath.BGM);
+        object[] seList  = Resources.LoadAll (MyResourcesPath.SE);
 
         foreach (AudioClip bgm in bgmList) {
             _bgmDic [bgm.name] = bgm;
